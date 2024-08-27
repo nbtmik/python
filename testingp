@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package palindrome;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author KIIT
+ */
+public class Palindrome {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int r;
+        Scanner s= new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n=s.nextInt();
+        int m=n;
+        int num=0;
+        while(n>0){
+            r=n%10;
+            n=n/10;
+            num = num*10 + r;
+        }
+        if(num==m){
+        System.out.println("Palindrome number");
+        }else{
+         System.out.println("not Palindrome number");   
+    }
+    }
+    
+}
